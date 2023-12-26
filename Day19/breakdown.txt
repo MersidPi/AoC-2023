@@ -1,0 +1,61 @@
+Ovo sam pisao prije izrade zadatka da bih sebi olaksao kodiranje
+
+s < 1351 in-px
+	a < 2006 px-qkq
+		x < 1416 qkq-A //////////////
+		x >= 1416 qkq-crn
+			x > 2662 crn-A //////////////
+			x <= 2662 crn-R
+	a >= 2006 px-px
+		m > 2090 px-A //////////////
+		m <= 2090 px-rfg
+			s < 537 rfg-gd
+				a > 3333 gd-R
+				a <= 3333 gd-R
+			s >= 537 rfg
+				x > 2440 rfg-R
+				x <= 2440 rfg-A //////////////
+s >= 1351 in-qqz
+	s > 2770 qqz-qs
+		s > 3448 qs-A //////////////
+		s <= 3448 qs-lnx
+			m > 1548 lnx-A //////////////
+			m <= 1548 lnx-A //////////////
+	s <= 2770 qqz
+		m < 1801 qqz-hdj
+			m > 838 hdj-A //////////////
+			m <= 838 hdj-pv
+				a > 1716 pv-R
+				a <= 1716 pv-A //////////////
+		m >= 1801 qqz-R
+
+svaki red sto ima //////////////, sva do tad ogranicenja se presijeku i
+sacuvaju i to je skup intervala koji se primaju. za svaki taj skup intervala
+lagano je naci broj kombinacija x m a s samo pomnozis, 
+
+bug koji treba pripaziti:
+s >= 1351 in-qqz
+	s > 2770 qqz-qs
+		s > 3448 qs-A //////////////
+		s <= 3448 qs-lnx
+			m > 1548 lnx-A //////////////
+			m <= 1548 lnx-A //////////////
+	s <= 2770 qqz
+		m < 1801 qqz-hdj
+			m > 838 hdj-A //////////////
+			m <= 838 hdj-pv
+				s > 1000 pv-A ////
+				s <= 1000 pv-A //////////////
+		m >= 1801 qqz-R
+
+
+x > 1000   lower 1001
+	x > 999   lower ne smije bit 1000 nego ostaje 1001 dakle uporedjujes lower 1001 i 1000
+
+
+x > 1000   lower 1001
+	x > 1001   lower mora bit 1002 tkd uporedjujes lower 1001 i 1002
+
+
+x <= 1000
+	x <= 999  upper postaje 999 tkd uporedjujes upper 1000 i 999

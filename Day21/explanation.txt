@@ -1,0 +1,18 @@
+For part 1 I found the position of the letter S, and put O in its place. Then I made a 
+loop for steps. In each iteration (for each step) it finds O and puts dot instead and 
+puts $ in 4 neighbouring cells (if there's not wall). We do this through all coordinates, 
+and after this, we just replace $ with O in the matrix. After many steps, in the end we 
+just count number of O in the matrix and thats it.
+
+For the second part I honestly don't fully understand why it works, I found the method 
+on the internet. We construct a polynomial with this data set:
+x = 0, y = number of positions for 65 moves
+x = 1, y = number of positions for 65 + 131 moves
+x = 2, y = number of positions for 65 + 131 * 2 moves
+and the end result is just the value of the polynomial for x = 202300. I wrote some 
+comments in the code about thiese values 131, 65, 202300 and what they mean. Also there 
+is some code that I have written as a homework from course Numeric algorithms, as I needed 
+to construct the quadratic function (I can say quadratic function as it is second degree polynomial).
+
+PS: You need to manually make input bigger, repeat it all around, because the 
+"infinite grid" isn't implemented..

@@ -1,0 +1,5 @@
+For part 1 we can implement Dijkstra algorithm for shortest path, in this case it is for 
+minimal heat loss, or minimum sum of numbers on which we make a path. In part 1 there is 
+a constraint that we can't go more than 3 steps in one direction, so we need to take care of that.
+For part 2 there are more constraints, we can only go from 4 to 10 steps in one direction. 
+There are more if statements which took me a lot more time than it should have.

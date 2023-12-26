@@ -1,0 +1,9 @@
+Firstly I parsed all workflows and parts to make things easier to work with. After that, we go 
+for each part, through workflows according to rules in those workflows, this structure looks like 
+a tree. If we end up on A, we put the part in the sum and so on.
+
+For part 2, we have paths through workflows that lead to couple letter As. For each path we have 
+constraints for x, m, a and s, so we need to make valid ranges for those letters. Then for each 
+path we simply multiply number of values in each range and that way we'll get number of combinations 
+of x, m, a, s (different parts). Sum them all up and that's the final answer.
+

@@ -1,0 +1,6 @@
+For part 1 it's pretty straightforward how to solve it, we just follow the instructions for 
+calculating hash and add it to the sum for every string.
+
+For part 2 we first determine the hash for the name so we know to which box it belongs, and 
+if we need to add the lens, remove it from the box or update it. We repeat this for every 
+string and in the end we calculate the sum according to task.

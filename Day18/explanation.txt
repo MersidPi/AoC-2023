@@ -1,0 +1,14 @@
+For part 1, we find max coordinates, so we can make a matrix in which we can put the path. 
+Then we make a path in the matrix with # according to input moves. If the direction is up we 
+put ^ and if it is down we put v, that will be useful in the next step. After making the path, 
+we need to count everything that is inside, we can know that we are inside if we passed symbol 
+^, and if we passed v after that we are outside. This is the case because the direction of 
+drawing the path is clockwise. 
+
+For part 2, brute force isn't the option, the matrix would take more than 140 TB (I did the 
+calculation for fun :D). So the mathematical solution is the way. Honestly, I didn't know 
+what formulas are needed to solve it so I googled a lot, and found Shoelace formula for finding 
+area of a polygon, if we have all coordinates of the points. The second formula was from Pick's 
+Theorem, which is used to calculate area of a polygon but with integer points. With a little 
+bit math manipulation of those 2 formulas, and after counting all the steps and storing 
+coordinates of vertices, we can calculate the number that we want.

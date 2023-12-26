@@ -1,0 +1,9 @@
+I made a function energize, that recursively calculates which coordinates in the matrix are 
+energized by the light beam. It's not written optimally but it was the first solution I thought of.
+
+For part 1 I just called this function one time.
+
+For part 2 I brute-forced it, calling it for every  possible spot around the matrix and getting 
+the max number of energized cells. It around 5 minutes to calculate for big input, which isn't 
+good but unfortunately I didn't think of a way to optimize it.
+

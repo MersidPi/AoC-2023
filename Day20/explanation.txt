@@ -1,0 +1,14 @@
+Firstly we can parse all modules to make things easier. Then we make a loop that simulates the 
+push of a button. We can put in a queue every pulse that every module sends, because it's a 
+LIFO structure, taht way we process pulses in correct order. we simulate pulses propagation 
+through modules and just count low and high pulses. In the end we just multiply those 2 counters.
+
+In the second part, after analysing input and seeing that only one conjunction named lb can send 
+pulse to final module rx, I got this idea. All inputs to lb need to be high pulse, because only 
+then it will send a low pulse to rx. So we can start pressing the button, and count how many 
+number of button presses are needed to get each individual input of conjunction lb to be high. 
+This happens periodically for each input, so the least number of button presses to get all 
+inputs to be high is least common multiple of those numbers. And that is the result to part 2.
+
+PS: Original example for input doesn't work beacuse real in real input modules only have 2 letters,
+and for part 2 example for input doesn't have rx module.

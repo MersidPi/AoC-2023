@@ -1,0 +1,12 @@
+For part 1 we have 2 things that we have to do:
+ - roll all the rocks to the top, I  did this in the function rollNorth, in which we go through 
+ the matrix and when we find the rock, we put . in its place and then we go through rows above 
+ the rock, when we encounter a wall or end of the matrix, we put the rock below that obstacle
+ - sum up the rocks, this is straightforward
+
+In part 2 we need to find the state of the matrix after 1000 000 000 cycles, one cycle means 
+that we roll the rocks in all 4 directions. Of course this would take too much time if we 
+brute-force it, so we need to see if there is a pattern of repeating matrices. We need to find 
+when matrices start to repeat, and how many of them are repeating, then we can calculate which 
+matrix corresponds to the one that we would get after 1000 000 000 cycles. When we find it, only 
+thing left to do is to sum up the rocks and task for today is done.
